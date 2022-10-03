@@ -41,3 +41,5 @@ sanity/config/@sanity/default-login.json
 sanity/config/@sanity/form-builder.json
 sanity/config/@sanity/vision.json
 
+
+.vercel
