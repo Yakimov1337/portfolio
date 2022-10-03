@@ -10,6 +10,11 @@ export default {
     },
     {
       name: "role",
+      title: "Role",
+      type: "string",
+    },
+    {
+      name: "heroImage",
       title: "Image",
       type: "image",
       options: {
