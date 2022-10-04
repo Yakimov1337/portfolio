@@ -46,29 +46,29 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 
-  let [pageInfoTest, setPageInfoTest] = useState<PageInfo>();
-  let [experienceTest, setExperienceTest] = useState<Experience[]>();
-  let [skillsTest, setSkillsTest] = useState<Skill[]>();
-  let [projectTest, setProjectTest] = useState<Project[]>();
-  let [socialsTest, setSocialsTest] = useState<Social[]>();
+  // let [pageInfoTest, setPageInfoTest] = useState<PageInfo>();
+  // let [experienceTest, setExperienceTest] = useState<Experience[]>();
+  // let [skillsTest, setSkillsTest] = useState<Skill[]>();
+  // let [projectTest, setProjectTest] = useState<Project[]>();
+  // let [socialsTest, setSocialsTest] = useState<Social[]>();
 
 
-  useEffect(() => {
-    async function FetchData() {
-      const pageInfo: PageInfo = await fetchPageInfo();
-      const experiences: Experience[] = await fetchExperience();
-      const skills: Skill[] = await fetchSkills();
-      const projects: Project[] = await fetchProjects();
-      const socials: Social[] = await fetchSocials();
+  // useEffect(() => {
+  //   async function FetchData() {
+  //     const pageInfo: PageInfo = await fetchPageInfo();
+  //     const experiences: Experience[] = await fetchExperience();
+  //     const skills: Skill[] = await fetchSkills();
+  //     const projects: Project[] = await fetchProjects();
+  //     const socials: Social[] = await fetchSocials();
 
-      setPageInfoTest(pageInfo);
-      setExperienceTest(experiences);
-      setSkillsTest(skills);
-      setProjectTest(projects);
-      setSocialsTest(socials);
-    }
-    FetchData();
-  }, []);
+  //     setPageInfoTest(pageInfo);
+  //     setExperienceTest(experiences);
+  //     setSkillsTest(skills);
+  //     setProjectTest(projects);
+  //     setSocialsTest(socials);
+  //   }
+  //   FetchData();
+  // }, []);
 
   return (
     <div
