@@ -34,15 +34,15 @@ export default function ContactMe({}: Props) {
         <div>
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+1231231</p>
+            <p className="text-2xl">+359 899 80 7575</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">asdasd@abv.bg</p>
+            <p className="text-2xl">george.yakimov4@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">123 devlepoer lane</p>
+            <p className="text-2xl">Sofia</p>
           </div>
         </div>
         <form
