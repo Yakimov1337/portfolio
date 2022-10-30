@@ -16,7 +16,6 @@ import { fetchExperience } from "../utils/fetchExperience";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocials } from "../utils/fetchSocials";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 type Props = {
   pageInfo: PageInfo;
@@ -46,11 +45,13 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 };
 
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
+
   // let [pageInfoTest, setPageInfoTest] = useState<PageInfo>();
   // let [experienceTest, setExperienceTest] = useState<Experience[]>();
   // let [skillsTest, setSkillsTest] = useState<Skill[]>();
   // let [projectTest, setProjectTest] = useState<Project[]>();
   // let [socialsTest, setSocialsTest] = useState<Social[]>();
+
 
   // useEffect(() => {
   //   async function FetchData() {
@@ -80,9 +81,9 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Header socials={socials} />
-      <section id="hero" className="snap-center">
+  <section id="hero" className="snap-center">
         <Hero pageInfo={pageInfo} />
-      </section>
+      </section>   
       <section id="about" className="snap-center">
         <About pageInfo={pageInfo} />
       </section>
@@ -97,7 +98,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       </section>
       <section id="contact" className="snap-start">
         <ContactMe />
-      </section>
+      </section> 
       {/* <Header socials={socialsTest} />
   <section id="hero" className="snap-center">
         <Hero pageInfo={pageInfoTest} />
@@ -121,9 +122,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             {/*TO DO: CHANGE IMAGE */}
-            <Image
-              width={10}
-              height={10}
+            <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://avatars.githubusercontent.com/u/92337248?v=4"
               alt=""
@@ -136,3 +135,5 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 };
 
 export default Home;
+
+
