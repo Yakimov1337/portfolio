@@ -1,6 +1,6 @@
 # Portfolio - Explore my proficiency
 
-![Portfolio](https://ibb.co/QF3gpLh)
+![Portfolio](public/skills.png)
 
 # Project Description
 
